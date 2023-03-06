@@ -1,0 +1,74 @@
+<!--Design By owNStalk-->
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+        <meta charset="UTF-8">
+        <title>Grid layout</title>
+        <script src="https://unpkg.com/spacingjs" defer></script>
+        <link rel="stylesheet" href="beautify.css">
+        <script src="vue.global.prod.js"></script>
+<!--        <script src="dataContainer.js"></script>-->
+        <script src="dataContainer.min.js"></script>
+        <link rel="stylesheet" href="beautify.min.css">
+        <link rel="icon" href="icon.ico">
+</head>
+<body>
+<div id="area">
+        <h1 class="title">瓷砖导航页</h1>
+        <input type="radio" name="tab" id="CU" checked>
+        <input type="radio" name="tab" v-for="s in selector" :id=s>
+        <div class="shell">
+                <div class="tileContainer CU">
+                        <div class="tileBox" v-for="c in CU">
+                                <a :href=c.link class="tile" target="_blank">{{c.name}}</a>
+                        </div>
+                </div>
+                <div class="tileContainer video">
+                        <div class="tileBox" v-for="v in video">
+                                <a :href=v.link class="tile" target="_blank">{{v.name}}</a>
+                        </div>
+                </div>
+                <div class="tileContainer learn">
+                        <div class="tileBox" v-for="l in learn">
+                                <a :href=l.link class="tile" target="_blank">{{l.name}}</a>
+                        </div>
+                </div>
+                <div class="tileContainer tools">
+                        <div class="tileBox" v-for="t in tools">
+                                <a :href=t.link class="tile" target="_blank">{{t.name}}</a>
+                        </div>
+                </div>
+                <div class="tileContainer webTools">
+                        <div class="tileBox" v-for="w in webTools">
+                                <a :href=w.link class="tile" target="_blank">{{w.name}}</a>
+                        </div>
+                </div>
+                <div class="tileContainer theme">
+                        <div class="tileBox" v-for="t in theme">
+                                <a :href=t.link class="tile" target="_blank">{{t.name}}</a>
+                        </div>
+                </div>
+                <div class="tileContainer picSource">
+                        <div class="tileBox" v-for="p in picSource">
+                                <a :href=p.link class="tile" target="_blank">{{p.name}}</a>
+                        </div>
+                </div>
+                <div class="tileContainer resources">
+                        <div class="tileBox" v-for="r in resources">
+                                <a :href=r.link class="tile" target="_blank">{{r.name}}</a>
+                        </div>
+                </div>
+                <div class="tileContainer game">
+                        <div class="tileBox" v-for="g in game">
+                                <a :href=g.link class="tile" target="_blank">{{g.name}}</a>
+                        </div>
+                </div>
+        </div>
+        <div class="tileContainerSelect">
+                <label v-for="s in selectData" :for=s.name>
+                        {{s.text}}
+                </label>
+        </div>
+</div>
+</body>
+</html>
