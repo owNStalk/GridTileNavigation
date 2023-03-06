@@ -7,15 +7,15 @@ window.onload=()=>{
                                         { name: 'video', text: '视频' },
                                         { name: 'learn', text: '学习' },
                                         { name: 'tools', text: '工具' },
-                                        { name: 'webTools',text: '开发' },
+                                        { name: 'dev',text: '开发' },
                                         { name: 'theme', text: '主题' },
                                         { name: 'picSource', text: '图源' },
                                         { name: 'resources', text: '资源' },
                                         { name: 'game', text: '游戏' },
                                 ],
-                                [ 'video', 'learn', 'tools', 'webTools', 'theme', 'picSource', 'resources', 'game' ]
+                                [ 'video', 'learn', 'tools', 'dev', 'theme', 'picSource', 'resources', 'game' ]
                         ];
-                        const [ CU, video, learn, tools, webTools, theme, picSource, resources, game ] = [
+                        const [ CU, video, learn, tools, dev, theme, picSource, resources, game ] = [
                                 [
                                         {name: '必应',link: 'https://cn.bing.com/'},
                                         {name: 'Google',link: 'https://www.google.com/'},
@@ -73,6 +73,7 @@ window.onload=()=>{
                                         {name: 'TOONME',link: 'https://toonme.com/'},
                                 ],
                                 [
+                                        {name: 'GitHub', link: 'https://github.com/'},
                                         {name:'hype4 academy',link:'https://hype4.academy/tools'},
                                         {name:'UIVERSE.IO',link:'https://uiverse.io/'},
                                         {name:'Cool Backgrounds',link:'https://coolbackgrounds.io/'},
@@ -159,7 +160,7 @@ window.onload=()=>{
                                 video,
                                 learn,
                                 tools,
-                                webTools,
+                                dev,
                                 theme,
                                 picSource,
                                 resources,

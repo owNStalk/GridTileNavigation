@@ -5,6 +5,10 @@
   font-display: swap;
   src: url(https://fonts.gstatic.com/s/quicksand/v30/6xK-dSZaM9iE8KbpRA_LJ3z8mH9BOJvgkP8o18E.ttf) format('truetype');
 }
+@font-face {
+  font-family: 'PingFangHK';
+  src: url(./PingFangHK.otf);
+}
 * {
   transition: 0.6s ease-in-out;
   margin: 0;
@@ -17,7 +21,7 @@
   justify-content: center;
   align-items: center;
   height: 100vh;
-  font-family: Quicksand, "苹方-港", serif;
+  font-family: Quicksand, PingFangHK , serif;
   background-color: #f7f7f7;
 }
 * body #area {
@@ -204,12 +208,12 @@
 * body #area #tools:checked ~ .tileContainerSelect label:nth-of-type(4)::before {
   width: 100%;
 }
-* body #area #webTools:checked ~ .tileContainerSelect label:nth-of-type(5) {
+* body #area #dev:checked ~ .tileContainerSelect label:nth-of-type(5) {
   border-radius: 1.5vw;
   transform: scale(0.9);
   color: #E5EDF5;
 }
-* body #area #webTools:checked ~ .tileContainerSelect label:nth-of-type(5)::before {
+* body #area #dev:checked ~ .tileContainerSelect label:nth-of-type(5)::before {
   width: 100%;
 }
 * body #area #theme:checked ~ .tileContainerSelect label:nth-of-type(6) {
@@ -256,7 +260,7 @@
 * body #area #tools:checked ~ .shell .tileContainer {
   transform: translateX(-300%);
 }
-* body #area #webTools:checked ~ .shell .tileContainer {
+* body #area #dev:checked ~ .shell .tileContainer {
   transform: translateX(-400%);
 }
 * body #area #theme:checked ~ .shell .tileContainer {

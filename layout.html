@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <title>Grid layout</title>
         <script src="https://unpkg.com/spacingjs" defer></script>
-        <link rel="stylesheet" href="beautify.css">
+<!--        <link rel="stylesheet" href="beautify.css">-->
         <script src="vue.global.prod.js"></script>
 <!--        <script src="dataContainer.js"></script>-->
         <script src="dataContainer.min.js"></script>
@@ -38,9 +38,9 @@
                                 <a :href=t.link class="tile" target="_blank">{{t.name}}</a>
                         </div>
                 </div>
-                <div class="tileContainer webTools">
-                        <div class="tileBox" v-for="w in webTools">
-                                <a :href=w.link class="tile" target="_blank">{{w.name}}</a>
+                <div class="tileContainer dev">
+                        <div class="tileBox" v-for="d in dev">
+                                <a :href=d.link class="tile" target="_blank">{{d.name}}</a>
                         </div>
                 </div>
                 <div class="tileContainer theme">
